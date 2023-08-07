@@ -1,7 +1,8 @@
-
+/* default padding margin box-sizing  */
 *{
     padding: 0;
     margin: 0;
+    /* can more predictably control the space an element will take up without having to account for padding and border seperately */
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -10,4 +11,30 @@
     width: 100%;
     height: 100vh;
     background: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.calculator {
+    background: #3a5678;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* button formatting
+no border or outline, width and height same for square buttons, rounded edges, box shadow nested for emphasis of 3 dimensional looking buttons, transparent background with font-size color and cursor with margin for space between */
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
