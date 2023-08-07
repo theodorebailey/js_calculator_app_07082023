@@ -38,3 +38,25 @@ no border or outline, width and height same for square buttons, rounded edges, b
     margin: 10px;
 }
 
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+form .display input{
+    text-align: right;
+    /* full width */
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+/* add colour to first row */
+form input.operator{
+    color: #33ffd8;
+}
