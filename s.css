@@ -7,6 +7,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* our container is the screen display */
+/* we've indicated our container should cover the whole page with 100% width and 100vh */
+/* we've centered everything with display flex, align-items and justify-content: center */
 .container {
     width: 100%;
     height: 100vh;
@@ -16,6 +19,8 @@
     justify-content: center;
 }
 
+
+/* our calcualor class only needs colouring and some internal padding and rounded edges */
 .calculator {
     background: #3a5678;
     padding: 20px;
@@ -24,7 +29,10 @@
 
 /* button formatting
 no border or outline, width and height same for square buttons, rounded edges, box shadow nested for emphasis of 3 dimensional looking buttons, transparent background with font-size color and cursor with margin for space between */
+
+/* our calculator buttons require the most work - we've got to remove outlines and borders, create square buttons by eqaulling width and height with rounded edges border-radius, we nest box-shadow to create our 3D affect and set the background to transparent, set font size text color and cursor pointer */
 .calculator form input{
+    margin: 10px;
     border: 0;
     outline: 0;
     width: 60px;
@@ -35,9 +43,9 @@ no border or outline, width and height same for square buttons, rounded edges, b
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    margin: 10px;
 }
 
+/* our form display is our input field which needs to flex across the entire element using display felx and justify-content flex-end */
 form .display{
     display: flex;
     justify-content: flex-end;
