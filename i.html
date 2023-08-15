@@ -1,3 +1,8 @@
+
+<!-- ADD OWN FUNCTIONALITY -->
+<!-- MAKE SOMETHING HAPPEN WHEN THE SCREEN FILLS -->
+<!-- IF THE EXPRESSION DEMANDS TOO MUCH OF THE SCREEN SPACE MAKE SOMETHING HAPPEN -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +16,14 @@
 
     <!-- create container, calculator container, text field to populate, flex buttons through calculator options -- ac, de, ., and 0 - 9 with - + * / =-->
 
+    <!-- create our app container -->
+
     <div class="container">
 
+        <!-- create our calculator project -->
+
         <div class="calculator">
+            <!-- use a form to contain our calculator -->
             <form>
                 <div class="display">
                     <!-- name display can be targetted -->
@@ -21,8 +31,11 @@
                 </div>
                 <!-- add each individual row -->
                 <div>
+                    <!-- create rows of input buttons contained within division elements -->
                     <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                    <!-- delete button will delete one character, we will delete the last character using slice 0, -1 will remove the last character -->
                     <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <!-- onclick method in input field that adds the character to the display value input field -->
                     <input type="button" value="." onclick="display.value += '.' " class="operator">
                     <input type="button" value="/" onclick="display.value += '/' " class="operator">
                 </div>
@@ -48,6 +61,7 @@
                 <div>
                     <input type="button" value="00" onclick="display.value += '00' ">
                     <input type="button" value="0" onclick="display.value += '0' ">
+                    <!-- our equal sign uses an onclick method to evaluate the mathmatical expression -->
                     <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
                 </div>
             </form>
